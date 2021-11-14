@@ -76,7 +76,7 @@ a {
 }
 
 .project-preview {
-  max-height: 560px;
+  max-height: 521px;
 }
 
 .app-description {
@@ -138,5 +138,27 @@ a {
 
   .app-description {
     margin-bottom: 56px;
+  }
+}
+
+@media (max-width: 1198px) {
+  .app-description {
+    margin-bottom: 46px;
+  }
+
+  h3 {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-size: 59px;
+  }
+
+  .light-button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  h3 {
+    margin-top: 32px;
   }
 }
