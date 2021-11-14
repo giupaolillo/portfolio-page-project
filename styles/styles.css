@@ -5,29 +5,42 @@
   --secundary-color: #f9f7fe;
 }
 
-h1 {
-  font-family: var(--playfair);
-  font-weight: bold;
+h1,
+h2,
+h3 {
   color: black;
-  font-size: 96px;
-  line-height: 128px;
 }
 
 h2 {
   font-family: var(--poppins);
   font-weight: normal;
-  font-size: 24px;
-  line-height: 36px;
-  color: black;
-  padding-top: 24px;
-  padding-bottom: 49px;
+}
+h1 {
+  font-family: var(--playfair);
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 128px;
+}
+
+h3 {
+  font-family: var(--playfair);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  margin-bottom: 55px;
+  margin-top: 95px;
 }
 
 p {
   font-family: var(--poppins);
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 54px;
+  font-weight: 400;
+}
+
+.heading-container h2 {
+  font-size: 24px;
+  line-height: 36px;
+  padding-top: 24px;
+  padding-bottom: 49px;
 }
 
 a {
@@ -42,9 +55,87 @@ a {
   text-decoration: none;
 }
 
+.heading-container p {
+  font-size: 36px;
+  line-height: 54px;
+}
+
 .heading-container {
   background: var(--secundary-color);
   text-align: center;
   padding-top: 276px;
   padding-bottom: 271px;
+}
+
+.featured-projects {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 82px;
+  margin-top: 127px;
+}
+
+.project-preview {
+  max-height: 560px;
+}
+
+.app-description {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 68px;
+}
+
+.light-button {
+  background: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.app-description-container {
+  padding-left: 61px;
+}
+
+@media (max-width: 992px) {
+  h3 {
+    margin-top: 0;
+  }
+
+  .app-description-container {
+    padding: 0 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 77px;
+    line-height: 99px;
+  }
+
+  h3 {
+    font-size: 42px;
+    margin-bottom: 21px;
+  }
+
+  .heading-container p {
+    font-size: 32px;
+  }
+
+  .heading-container {
+    padding-top: 54px;
+    padding-bottom: 98px;
+  }
+
+  .featured-projects {
+    margin-top: 64px;
+    margin-bottom: 69px;
+  }
+
+  .app-description-container {
+    padding: 0 12px;
+    text-align: center;
+  }
+
+  .app-description {
+    margin-bottom: 56px;
+  }
 }
