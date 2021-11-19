@@ -31,7 +31,8 @@ h3 {
   margin-top: 95px;
 }
 
-p {
+p,
+.contact-options {
   font-family: var(--poppins);
   font-weight: 400;
 }
@@ -55,6 +56,12 @@ h5 {
   line-height: 36px;
   margin-top: 20px;
   margin-bottom: 9px;
+}
+
+.contact-options {
+  background: white;
+  color: black;
+  padding: 0;
 }
 
 .work-list {
