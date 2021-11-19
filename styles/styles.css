@@ -36,23 +36,62 @@ p {
   font-weight: 400;
 }
 
-.heading-container h2 {
-  font-size: 24px;
-  line-height: 36px;
-  padding-top: 24px;
-  padding-bottom: 49px;
-}
-
 a {
   font-family: var(--poppins);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 27px;
   padding: 18px 46px;
   background: var(--primary-color);
   color: white;
   border-radius: 4px;
   text-decoration: none;
+}
+
+.about-section-content {
+  margin: 30px;
+}
+
+.photo-container {
+  padding: 50px 0;
+}
+.about-section {
+  padding: 160px 20px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  font-family: var(--playfair);
+  font-weight: 700;
+  line-height: 75px;
+}
+
+.about-section h2 {
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 29px 0;
+}
+
+.about-section p {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 48px;
+}
+
+.about-section img {
+  max-height: 740px;
+  border-radius: 10px;
+}
+
+.heading-container h2 {
+  font-size: 24px;
+  line-height: 36px;
+  padding-top: 24px;
+  padding-bottom: 49px;
 }
 
 .heading-container p {
@@ -64,8 +103,7 @@ a {
 .heading-container {
   background: var(--secundary-color);
   text-align: center;
-  padding-top: 276px;
-  padding-bottom: 271px;
+  padding: 160px 20px;
 }
 
 .featured-projects {
@@ -104,12 +142,21 @@ a {
     padding: 0 12px;
     text-align: center;
   }
+
+  .about-section {
+    text-align: center;
+    padding: 21px 20px;
+  }
 }
 
 @media (max-width: 576px) {
   h1 {
     font-size: 77px;
     line-height: 99px;
+  }
+
+  .about-section a {
+    padding: 15px 25px;
   }
 
   h3 {
@@ -144,6 +191,7 @@ a {
 @media (max-width: 1198px) {
   .app-description {
     margin-bottom: 46px;
+    text-align: center;
   }
 
   h3 {
