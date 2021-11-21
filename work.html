@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Currently, I am in the proccess of expanding my development experience. HTML, CSS and Javascript fluent, and as of now, gathering more ReactJs experience. "
+    />
+    <title>Get to know some of my projects: Giulia P.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,17 +33,71 @@
     ></script>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage"
+          ><img
+            src="/images/logo.png"
+            class="logo d-none d-sm-block"
+            alt="She Codes logo"
+        /></a>
+        <a href="/" title="Homepage"
+          ><img
+            src="/images/logo-small.jpg"
+            class="logo d-block d-sm-none"
+            alt="She Codes logo"
+        /></a>
+        <ul>
+          <li>
+            <a href="/" alt="Main page" title="Main page">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" alt="About me page" title="About me page"
+              >About</a
+            >
+          </li>
+          <li class="active">
+            <a href="/work.html" alt="My work" title="My work">Work</a>
+          </li>
+          <li>
+            <a href="/contact.html" alt="Contact me" title="Contact me"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="content">
-        <h1>Take a look at what I've been working on!</h1>
+        <h1 class="text-center">Take a look at what I've been working on!</h1>
         <div class="row work-list">
           <div class="col-md-6">
-            <img src="/images/mamahood.jpg" class="img-fluid" alt="" />
+            <a
+              href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/000/443/493/original/FinalProjectresize.html?1627721856"
+              alt="The Mamahood Project"
+              title="The Mamahood Project"
+              target="_blank"
+              ><img
+                src="/images/mamahood.jpg"
+                class="img-fluid"
+                alt="Mamahood Project Preview"
+            /></a>
+
             <h5 class="text-center">Mamahood Project</h5>
             <p class="text-center text-muted mb-5">Built with HTML and CSS</p>
           </div>
           <div class="col-md-6">
-            <img src="/images/weatherapp.jpg" class="img-fluid" alt="" />
+            <a
+              href="https://iwonderhowstheweather.netlify.app/"
+              alt="Weather Forecast App"
+              title="Weather Forecast App"
+              target="_blank"
+            >
+              <img
+                src="/images/weatherapp.jpg"
+                class="img-fluid"
+                alt="Weather App Preview"
+            /></a>
             <h5 class="text-center">Weather App</h5>
             <p class="text-center text-muted mb-5">
               Built with HTML, CSS and Javascript
@@ -48,7 +106,12 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <img src="/images/dictionary.png" class="img-fluid" alt="" />
+            <img
+              src="/images/dictionary.png"
+              class="img-fluid"
+              title="Dictionary App Preview"
+              alt="Dictionary App Preview"
+            />
             <h5 class="text-center">Dictionary App</h5>
             <p class="text-center text-muted mb-5">
               Built with HTML and React/p>
@@ -56,7 +119,12 @@
           </div>
 
           <div class="col-md-6">
-            <img src="/images/translation.png" class="img-fluid" alt="" />
+            <img
+              src="/images/translation.png"
+              class="img-fluid"
+              title="Translation App Preview"
+              alt="Translation App Preview"
+            />
             <h5 class="text-center">Translation App</h5>
             <p class="text-center text-muted mb-5">
               Built with HTML, CSS and React
@@ -64,6 +132,66 @@
           </div>
         </div>
       </div>
+      <footer>
+        <div class="contact-box mb-5">
+          <div>
+            <h4>Work Inquiry</h4>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a
+              href="/contact.html"
+              alt="Contact me"
+              title="Contact me"
+              class="branding-btn"
+              >Contact me</a
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:starkweissgluehend@gmail.com"
+            alt="Contact me by e-mail"
+            title="Contact me by e-mail"
+            class="email-link"
+            >starkweissgluehend@gmail.com</a
+          >
+        </div>
+        <div class="social-networks d-flex justify-content-center">
+          <a
+            href="https://github.com/giupaolillo/"
+            target="_blank"
+            alt="My Github profile"
+            title="My Github profile"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/giupaolillo/"
+            target="_blank"
+            title="My LinkedIn profile"
+            alt="My LinkedIn profile"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/_giugiugiugiu/"
+            target="_blank"
+            title="My Instagram profile"
+            alt="My Instagram profile"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p class="text-center mt-5 coded-by">
+          🤘 This project was coded by Giulia, and is
+          <a
+            href="https://github.com/giupaolillo/portfolio-page-project"
+            target="_blank"
+            class="repository-link"
+            title="Portfolio Page Repository link on GitHub"
+            alt="Portfolio Page Repository link on GitHub"
+            >open-sourced</a
+          >.
+        </p>
+      </footer>
     </div>
   </body>
 </html>

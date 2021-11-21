@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Get to know Giulia better - A brazilian Front-end Developer, currently living in Germany. Studied Graphic Design and Front-end development and has worked on different roles, including leading positions, and areas. "
+    />
+    <title>More about me: Giulia P.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,14 +33,47 @@
     ></script>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage"
+          ><img
+            src="/images/logo.png"
+            class="logo d-none d-sm-block"
+            alt="She Codes logo"
+        /></a>
+        <a href="/" title="Homepage"
+          ><img
+            src="/images/logo-small.jpg"
+            class="logo d-block d-sm-none"
+            alt="She Codes logo"
+        /></a>
+        <ul>
+          <li>
+            <a href="/" alt="Main page" title="Main page">Home</a>
+          </li>
+          <li class="active">
+            <a href="/about.html" alt="About me page" title="About me page"
+              >About</a
+            >
+          </li>
+          <li><a href="/work.html" alt="My work" title="My work">Work</a></li>
+          <li>
+            <a href="/contact.html" alt="Contact me" title="Contact me"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="row">
         <div class="col-md-6">
           <div class="content">
             <img
               src="/images/foto_original.jpg"
-              alt=""
-              class="img-fluid mb-4 d-block d-md-none"
+              alt="Giulia's picture"
+              title="Giulia's picture"
+              class="img-fluid mb-5 d-block d-md-none"
             />
             <h1>I'm Giulia Paolillo</h1>
             <h2>Front-end Developer, based in Berlin</h2>
@@ -46,17 +83,84 @@
               everything is well explained, homework and deadlines are good for
               keep focus
             </p>
-            <a href="#" class="branding-btn">All my projects</a>
+            <a
+              href="/work.html"
+              alt="Projects"
+              title="Projects"
+              class="branding-btn"
+              >All my projects</a
+            >
           </div>
         </div>
         <div class="col-md-6 photo-container">
           <img
             src="/images/foto_original.jpg"
-            alt=""
+            alt="Giulia's picture"
+            title="Giulia's picture"
             class="img-fluid d-none d-md-block"
           />
         </div>
       </div>
+      <footer>
+        <div class="contact-box mb-5">
+          <div>
+            <h4>Work Inquiry</h4>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a
+              href="/contact.html"
+              alt="Contact me"
+              title="Contact me"
+              class="branding-btn"
+              >Contact me</a
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:starkweissgluehend@gmail.com"
+            alt="Contact me by e-mail"
+            title="Contact me by e-mail"
+            class="email-link"
+            >starkweissgluehend@gmail.com</a
+          >
+        </div>
+        <div class="social-networks d-flex justify-content-center">
+          <a
+            href="https://github.com/giupaolillo/"
+            target="_blank"
+            alt="My Github profile"
+            title="My Github profile"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/giupaolillo/"
+            target="_blank"
+            title="My LinkedIn profile"
+            alt="My LinkedIn profile"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/_giugiugiugiu/"
+            target="_blank"
+            title="My Instagram profile"
+            alt="My Instagram profile"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p class="text-center mt-5 coded-by">
+          🤘 This project was coded by Giulia, and is
+          <a
+            href="https://github.com/giupaolillo/portfolio-page-project"
+            target="_blank"
+            class="repository-link"
+            title="Portfolio Page Repository link on GitHub"
+            alt="Portfolio Page Repository link on GitHub"
+            >open-sourced</a
+          >.
+        </p>
+      </footer>
     </div>
   </body>
 </html>
