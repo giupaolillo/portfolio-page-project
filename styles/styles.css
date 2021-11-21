@@ -3,28 +3,36 @@
   --playfair: "Playfair Display", serif;
   --primary-color: #6c63ff;
   --secundary-color: #f9f7fe;
-  --transition: all 100ms ease-in-out;
+  --transition: all 150ms ease-in-out;
 }
 
 h1,
+h3,
+h4 {
+  font-family: var(--playfair);
+}
+
 h2,
-h3 {
-  color: black;
+h5,
+nav li a,
+p,
+.contact-options,
+footer .email-link,
+.branding-btn,
+.light-button {
+  font-family: var(--poppins);
 }
 
 h2 {
-  font-family: var(--poppins);
   font-weight: normal;
 }
 h1 {
-  font-family: var(--playfair);
   font-weight: bold;
   font-size: 96px;
   line-height: 128px;
 }
 
 h3 {
-  font-family: var(--playfair);
   font-weight: 700;
   font-size: 64px;
   line-height: 85px;
@@ -33,12 +41,15 @@ h3 {
 }
 
 h5 {
-  font-family: var(--poppins);
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   margin-top: 20px;
   margin-bottom: 9px;
+}
+
+h4 {
+  font-size: 48px;
 }
 
 nav {
@@ -53,16 +64,10 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  font-family: var(--poppins);
   margin-left: 15px;
   color: #272142;
   font-weight: 500;
   transition: var(--transition);
-}
-
-nav li a:hover,
-nav li.active a {
-  color: var(--primary-color);
 }
 
 nav ul {
@@ -70,15 +75,49 @@ nav ul {
   padding: 0;
 }
 
+footer {
+  margin: 60px 0;
+}
+
 p,
 .contact-options {
-  font-family: var(--poppins);
   font-weight: 400;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+footer .social-networks a {
+  margin: 0 20px;
+  color: var(--primary-color);
+  background: var(--secundary-color);
+  padding: 10px 19px;
+  font-size: 25px;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+footer .contact-box {
+  display: flex;
+  justify-content: space-between;
+  background: var(--secundary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+footer .contact-box p {
+  margin: 0;
 }
 
 .branding-btn,
 .light-button {
-  font-family: var(--poppins);
   font-weight: 500;
   font-size: 15px;
   line-height: 27px;
@@ -125,13 +164,11 @@ p,
 
 .content-container h1 {
   font-size: 64px;
-  font-family: var(--playfair);
   font-weight: 700;
   line-height: 75px;
 }
 
 .content-container h2 {
-  font-family: var(--poppins);
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -139,7 +176,6 @@ p,
 }
 
 .content-container p {
-  font-family: var(--poppins);
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -191,6 +227,17 @@ p,
   padding-left: 61px;
 }
 
+footer .email-link:hover,
+nav li a:hover,
+nav li.active a {
+  color: var(--primary-color);
+}
+
+footer .social-networks a:hover {
+  color: white;
+  background: var(--primary-color);
+}
+
 @media (max-width: 576px) {
   h1 {
     font-size: 77px;
@@ -232,6 +279,31 @@ p,
   nav li a {
     font-size: 14px;
   }
+
+  footer .contact-box {
+    padding: 20px 20px 38px;
+    display: block;
+    text-align: center;
+  }
+
+  footer .contact-box p {
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .branding-btn {
+    padding: 16px 28px;
+    font-size: 15px;
+  }
+
+  footer .email-link {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -247,6 +319,18 @@ p,
   .content-container {
     text-align: center;
     padding: 21px 20px;
+  }
+
+  h4 {
+    font-size: 34px;
+  }
+
+  footer .contact-box {
+    padding: 30px 57px;
+  }
+
+  .branding-btn {
+    padding: 18px 22px;
   }
 }
 
