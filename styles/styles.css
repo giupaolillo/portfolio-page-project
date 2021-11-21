@@ -3,6 +3,7 @@
   --playfair: "Playfair Display", serif;
   --primary-color: #6c63ff;
   --secundary-color: #f9f7fe;
+  --transition: all 100ms ease-in-out;
 }
 
 h1,
@@ -31,24 +32,6 @@ h3 {
   margin-top: 95px;
 }
 
-p,
-.contact-options {
-  font-family: var(--poppins);
-  font-weight: 400;
-}
-
-a {
-  font-family: var(--poppins);
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 27px;
-  padding: 18px 46px;
-  background: var(--primary-color);
-  color: white;
-  border-radius: 4px;
-  text-decoration: none;
-}
-
 h5 {
   font-family: var(--poppins);
   font-weight: 700;
@@ -56,6 +39,67 @@ h5 {
   line-height: 36px;
   margin-top: 20px;
   margin-bottom: 9px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+}
+
+nav li a {
+  text-decoration: none;
+  font-family: var(--poppins);
+  margin-left: 15px;
+  color: #272142;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+nav li a:hover,
+nav li.active a {
+  color: var(--primary-color);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+.contact-options {
+  font-family: var(--poppins);
+  font-weight: 400;
+}
+
+.branding-btn,
+.light-button {
+  font-family: var(--poppins);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 27px;
+  padding: 18px 46px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.branding-btn {
+  background: var(--primary-color);
+  color: white;
+}
+
+.light-button {
+  background: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.logo {
+  max-height: 40px;
 }
 
 .contact-options {
@@ -143,30 +187,8 @@ h5 {
   margin-bottom: 68px;
 }
 
-.light-button {
-  background: white;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
 .app-description-container {
   padding-left: 61px;
-}
-
-@media (max-width: 992px) {
-  h3 {
-    margin-top: 0;
-  }
-
-  .app-description-container {
-    padding: 0 12px;
-    text-align: center;
-  }
-
-  .content-container {
-    text-align: center;
-    padding: 21px 20px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -205,6 +227,26 @@ h5 {
 
   .app-description {
     margin-bottom: 56px;
+  }
+
+  nav li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  h3 {
+    margin-top: 0;
+  }
+
+  .app-description-container {
+    padding: 0 12px;
+    text-align: center;
+  }
+
+  .content-container {
+    text-align: center;
+    padding: 21px 20px;
   }
 }
 
